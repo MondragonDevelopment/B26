@@ -13,12 +13,13 @@ C = [.5, .5*np.sqrt(3)]
 vertices = [A, B, C]
 
 # Initial position
-x_0 = [0.2, 0.5]
+x_0 = [random(), random()]
 coords = [x_0]
 
 for i in range(cycles):
     # Trow a d3
     d3 = choice(vertices)
+    # Calculate midpoint from x_0 to chosen vertex
     x_f = [(x_0[0]+d3[0])/2, (x_0[1]+d3[1])/2]
     coords.append(x_f)
     x_0 = x_f
@@ -36,7 +37,5 @@ ax.plot(v, w, c='red')
 ax.set_xlim(0, 1)
 ax.set_ylim(0, 1)
 ax.set(xlabel='x', ylabel='y', title='Random trajectory given a d3 roll')
-# ax.grid()
-
 # fig.savefig("test.png")
 plt.show()
