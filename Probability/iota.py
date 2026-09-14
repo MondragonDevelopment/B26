@@ -3,7 +3,7 @@ import os
 from gmpy2 import get_context, exp, const_pi
 
 
-def compute_i_to_the_i_native(output_file="iot.txt", chunk_size=5_000_000):
+def calculateIota(output_file="iot.txt", chunk_size=5_000_000):
     """
     Calculates 100 MB  of i^i = exp(- pi/2) using gmpy2
     """
@@ -42,4 +42,4 @@ def compute_i_to_the_i_native(output_file="iot.txt", chunk_size=5_000_000):
 
 
 if __name__ == "__main__":
-    compute_i_to_the_i_native()
+    calculateIota()
