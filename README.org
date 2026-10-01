@@ -3,4 +3,4 @@
 #+date:   2026-08-31
 
 This repo stores various projects and homeworks I will do during my
-first semester doing a masters degree on computer science.
+first semester while studying a masters degree on computer science.
