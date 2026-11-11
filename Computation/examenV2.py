@@ -484,7 +484,8 @@ def minDFA(DFA):
     return Automaton(new_Q, DFA.sigma, new_delta, q0, new_F)
 
 
-def toRegex(DFA):
+# def toRegex(DFA):
+
     
 
 
@@ -575,7 +576,7 @@ if __name__ == '__main__':
     # delta[3][0] = {"q2"}
     # delta[4][0] = {"q2"}
     Q = ["q0", "q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"]
-    Q = [(_,) for _ in Q]
+    # Q = [(_,) for _ in Q]
     sigma = ["a", "b"]
     q0 = Q[0]
     F = {Q[7]}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http://www.gexf.net/1.2draft/viz" version="1.2">
+  <graph mode="static" defaultedgetype="undirected">
+    <nodes>
+      <!-- Bezukhov Family -->
+      <node id="0" label="Pierre Bezukhov"><viz:position x="0.0" y="0.0" z="0.0"/></node>
+      <node id="1" label="Count Kirill Bezukhov"><viz:position x="-15.0" y="-10.0" z="0.0"/></node>
+
+      <!-- Rostov Family -->
+      <node id="2" label="Natasha Rostova"><viz:position x="30.0" y="20.0" z="0.0"/></node>
+      <node id="3" label="Nikolai Rostov"><viz:position x="30.0" y="0.0" z="0.0"/></node>
+      <node id="4" label="Count Ilya Rostov"><viz:position x="45.0" y="10.0" z="0.0"/></node>
+      <node id="5" label="Countess Natalya Rostova"><viz:position x="45.0" y="-10.0" z="0.0"/></node>
+      <node id="6" label="Petya Rostov"><viz:position x="20.0" y="15.0" z="0.0"/></node>
+      <node id="7" label="Sonya Rostova"><viz:position x="35.0" y="-15.0" z="0.0"/></node>
+
+      <!-- Bolkonsky Family -->
+      <node id="8" label="Prince Andrei Bolkonsky"><viz:position x="-30.0" y="20.0" z="0.0"/></node>
+      <node id="9" label="Princess Marya Bolkonskaya"><viz:position x="-45.0" y="10.0" z="0.0"/></node>
+      <node id="10" label="Prince Nikolai Bolkonsky (Old)"><viz:position x="-45.0" y="-10.0" z="0.0"/></node>
+      <node id="11" label="Lise Bolkonskaya"><viz:position x="-30.0" y="40.0" z="0.0"/></node>
+
+      <!-- Kuragin Family -->
+      <node id="12" label="Prince Vasily Kuragin"><viz:position x="0.0" y="-30.0" z="0.0"/></node>
+      <node id="13" label="Hélène Kuragina"><viz:position x="-15.0" y="-20.0" z="0.0"/></node>
+      <node id="14" label="Anatole Kuragin"><viz:position x="15.0" y="-20.0" z="0.0"/></node>
+      <node id="15" label="Ippolit Kuragin"><viz:position x="0.0" y="-45.0" z="0.0"/></node>
+
+      <!-- Drubetskoy & Close Associates -->
+      <node id="16" label="Anna Mikhailovna Drubetskaya"><viz:position x="15.0" y="-40.0" z="0.0"/></node>
+      <node id="17" label="Boris Drubetskoy"><viz:position x="25.0" y="-30.0" z="0.0"/></node>
+      <node id="18" label="Dolokhov"><viz:position x="-15.0" y="-35.0" z="0.0"/></node>
+      <node id="19" label="Vasily Denisov"><viz:position x="40.0" y="-30.0" z="0.0"/></node>
+      <node id="20" label="Platon Karataev"><viz:position x="-10.0" y="15.0" z="0.0"/></node>
+
+      <!-- Historical Figures -->
+      <node id="21" label="Napoleon Bonaparte"><viz:position x="-60.0" y="50.0" z="0.0"/></node>
+      <node id="22" label="General Kutuzov"><viz:position x="-45.0" y="50.0" z="0.0"/></node>
+    </nodes>
+
+    <edges>
+      <!-- Bezukhov Connections -->
+      <edge id="e0" source="0" target="1" label="Father/Son" />
+      <edge id="e1" source="0" target="13" label="Married" />
+      <edge id="e2" source="0" target="2" label="Married" />
+      <edge id="e3" source="0" target="20" label="Prisoner/Mentor" />
+
+      <!-- Rostov Connections -->
+      <edge id="e4" source="4" target="5" label="Married" />
+      <edge id="e5" source="4" target="2" label="Father/Daughter" />
+      <edge id="e6" source="4" target="3" label="Father/Son" />
+      <edge id="e7" source="4" target="6" label="Father/Son" />
+      <edge id="e8" source="5" target="7" label="Aunt/Ward" />
+      <edge id="e9" source="3" target="7" label="Cousins/Romance" />
+      <edge id="e10" source="3" target="9" label="Married" />
+      <edge id="e11" source="3" target="19" label="Military Friends" />
+
+      <!-- Bolkonsky Connections -->
+      <edge id="e12" source="10" target="8" label="Father/Son" />
+      <edge id="e13" source="10" target="9" label="Father/Daughter" />
+      <edge id="e14" source="8" target="11" label="Married" />
+      <edge id="e15" source="8" target="2" label="Engaged/Romance" />
+      <edge id="e16" source="8" target="22" label="General/Subordinate" />
+
+      <!-- Kuragin Connections -->
+      <edge id="e17" source="12" target="13" label="Father/Daughter" />
+      <edge id="e18" source="12" target="14" label="Father/Son" />
+      <edge id="e19" source="12" target="15" label="Father/Son" />
+      <edge id="e20" source="13" target="14" label="Siblings" />
+      <edge id="e21" source="14" target="2" label="Attempted Elopement" />
+      <edge id="e22" source="13" target="18" label="Affair" />
+
+      <!-- Other Social & Historical Connections -->
+      <edge id="e23" source="16" target="17" label="Mother/Son" />
+      <edge id="e24" source="17" target="2" label="Childhood friend/Suitor" />
+      <edge id="e25" source="3" target="17" label="Rivals/Acquaintances" />
+      <edge id="e26" source="0" target="18" label="Duel rivals" />
+      <edge id="e27" source="21" target="22" label="Military Opponents" />
+    </edges>
+  </graph>
+</gexf>
